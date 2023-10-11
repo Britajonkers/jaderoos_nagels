@@ -1,0 +1,157 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(252, 251, 252);
+}
+
+html,
+body {
+  background-image: url('../images/achtergrondRose.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+nav ul {
+  margin: 0;
+  padding-top: 0.5em;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  padding-right: 1.5em;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: rgb(191, 30, 97);
+}
+
+/* ----------------------------------Index---------------------------------- */
+h1 {
+  font-size: 5.2em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+/* Stijl voor de fotocollage-animatie */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+}
+
+section img {
+  width: 11em;
+  /* Pas dit aan op basis van je afbeeldingsgrootte */
+  margin: 1em;
+  animation: rotatePhoto 10s linear infinite;
+  /* Animatie-instellingen */
+}
+
+@keyframes rotatePhoto {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+section img:hover {
+  width: 15em;
+  /* Pas dit aan op basis van je afbeeldingsgrootte */
+  margin: 1em;
+  animation: rotatePhoto 10s linear infinite;
+  /* Animatie-instellingen */
+}
+
+/* ----------------------------------Overmij---------------------------------- */
+figure {
+  display: flex;
+  position: absolute;
+  top: 20%;
+}
+
+figcaption h1 {
+  font-weight: normal;
+  color: white;
+  font-size: 2.5em;
+  text-align: left;
+
+}
+
+figure img {
+  width: 21em;
+  margin-top: 5em;
+  border: 0.2em solid rgb(191, 30, 97);
+  border-radius: 1em;
+  padding: 0.5em;
+}
+
+figure p {
+  text-align: left;
+  color: white;
+}
+
+figure figcaption {
+  margin: 2em;
+}
+
+/* ----------------------------------Prijslijst/Afspraakmaken---------------------------------- */
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 50%;
+  margin-top: 1.5em;
+  background-color: white;
+
+}
+
+th,
+td {
+  border: 1.005em solid rgb(181, 106, 138);
+  padding: 1.5em;
+  text-align: left;
+  color: black;
+}
+
+th {
+  background-color: rgb(181, 106, 138);
+}
+
+tr:hover {
+  background-color: rgb(191, 30, 97);
+}
+
+.table {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ----------------------------------Footer---------------------------------- */
+footer {
+  background-color: rgb(181, 106, 138);
+  color: #fff;
+  text-align: center;
+  padding: 0.4em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

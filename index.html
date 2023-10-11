@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JadeRoosNails</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="overmij.html">Over Mij</a></li>
+                <li> <a href="prijslijst.html">Prijslijst</a></li>
+                <li> <a href="afspraakmaken.html">Afspraak maken</a></li>
+            </ul>
+        </nav>
+        <h1>JadeRoosNails</h1>
+    </header>
+    <main>
+        <section>
+            <img src="./images/1.jpg" alt="Afbeelding 1" class="photo">
+            <img src="./images/2.jpg" alt="Afbeelding 2" class="photo">
+            <img src="./images/3.jpg" alt="Afbeelding 3" class="photo">
+            <img src="./images/4.jpg" alt="Afbeelding 4" class="photo">
+            <img src="./images/5.jpg" alt="Afbeelding 5" class="photo">
+            <img src="./images/6.jpg" alt="Afbeelding 6" class="photo">
+            <img src="./images/7.jpg" alt="Afbeelding 7" class="photo">
+            <img src="./images/8.jpg" alt="Afbeelding 8" class="photo">
+            <img src="./images/9.jpg" alt="Afbeelding 9" class="photo">
+            <img src="./images/10.jpg" alt="Afbeelding 10" class="photo">
+            <img src="./images/11.jpg" alt="Afbeelding 12" class="photo">
+            <img src="./images/12.jpg" alt="Afbeelding 13" class="photo">
+        </section>
+    </main>
+
+    <footer>
+        © 2023 Jouw JadeRoosNails. Alle rechten voorbehouden.
+    </footer>
+</body>
+
+<script>
+    const photos = document.querySelectorAll('.photo');
+
+    photos.forEach(photo => {
+        photo.addEventListener('mouseenter', () => {
+            photo.style.animationPlayState = 'paused';
+        });
+
+        photo.addEventListener('mouseleave', () => {
+            photo.style.animationPlayState = 'running';
+        });
+    });
+</script>
+
+</html>
