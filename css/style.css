@@ -45,19 +45,24 @@ h1 {
   margin-bottom: 0;
 }
 
+h2{
+  text-align: center;
+}
+
+
 /* Stijl voor de fotocollage-animatie */
 section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 5em;
+  padding: 20px;
 }
 
 section img {
-  width: 11em;
+  width: 200px;
   /* Pas dit aan op basis van je afbeeldingsgrootte */
-  margin: 1em;
+  margin: 10px;
   animation: rotatePhoto 10s linear infinite;
   /* Animatie-instellingen */
 }
@@ -73,9 +78,9 @@ section img {
 }
 
 section img:hover {
-  width: 15em;
+  width: 200px;
   /* Pas dit aan op basis van je afbeeldingsgrootte */
-  margin: 1em;
+  margin: 10px;
   animation: rotatePhoto 10s linear infinite;
   /* Animatie-instellingen */
 }
@@ -96,11 +101,12 @@ figcaption h1 {
 }
 
 figure img {
-  width: 21em;
+  width: 300px;
   margin-top: 5em;
-  border: 0.2em solid rgb(191, 30, 97);
-  border-radius: 1em;
-  padding: 0.5em;
+  border: 1px solid rgb(191, 30, 97);
+  border-radius: 4px;
+  padding: 5px;
+
 }
 
 figure p {
@@ -112,7 +118,7 @@ figure figcaption {
   margin: 2em;
 }
 
-/* ----------------------------------Prijslijst/Afspraakmaken---------------------------------- */
+/* ----------------------------------Prijslijst---------------------------------- */
 table {
   margin: 0 auto;
   border-collapse: collapse;
@@ -124,8 +130,8 @@ table {
 
 th,
 td {
-  border: 1.005em solid rgb(181, 106, 138);
-  padding: 1.5em;
+  border: 1px solid rgb(181, 106, 138);
+  padding: 8px;
   text-align: left;
   color: black;
 }
@@ -135,7 +141,7 @@ th {
 }
 
 tr:hover {
-  background-color: rgb(191, 30, 97);
+  background-color: #bf1e61;
 }
 
 .table {
@@ -145,12 +151,50 @@ tr:hover {
   height: 100vh;
 }
 
+
+/* ----------------------------------Afspraak maken---------------------------------- */
+
+form{
+  padding: 3em;
+}
+
+input {
+  border: 0.2em solid;
+  border-color:rgb(181, 106, 138);
+  border-radius: 0.5em;
+  color: black;
+  background-color:white;
+}
+
+select {
+  color: black;
+}
+
+input[type="submit"] {
+  background-color: #bf1e61;
+  padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  color: white;
+  border: none;
+
+}
+
+label{
+  color:rgb(87, 85, 85);
+}
+
+legend{
+  color: black;
+}
+
+
 /* ----------------------------------Footer---------------------------------- */
 footer {
   background-color: rgb(181, 106, 138);
   color: #fff;
   text-align: center;
-  padding: 0.4em;
+  padding: 10px;
   position: fixed;
   bottom: 0;
   width: 100%;

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JadeRoosNails</title>
+    <title>JadeRoosNails-afspraakmaken</title>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
 
@@ -20,23 +20,49 @@
         </nav>
     </header>
 
-    <main class="table">
-        <h1>Afspraak maken</h1>
-        <table>
-            <tr>
-                <th>Maand</th>
-                <th>Dag</th>
-                <th>Soort afspraak</th>
-            </tr>
-            <tr>
-                <td>Kies maand</td>
-                <td>Kies dag </td>
-                <td>Kies afspraak</td>
-            </tr> 
+ 
+    <main>
+        <form action="./submitted.html">
+            <fieldset>
+                <legend>Kies uw datum</legend>
+                <input type="date" id="datum" name="datum">
+            </fieldset>
+    
+            <fieldset>
+                <legend>Kies het tijdstip</legend>
+                <input type="time" id="tijd" name="tijd">
+            </fieldset>
+    
+            <fieldset>
+                <legend>Kies een behandeling</legend>
+                <select name="behandeling" id="behandeling">
+                    <option value="Gellak">Gellak</option>
+                    <option value="Gellak verwijderen">Gellak verwijderen</option>
+                    <option value="Gel met verlenging">Gel met verlenging</option>
+                    <option value="Acryl met verlenging">Acryl met verlenging</option>
+                    <option value="Biab">Biab</option>
+                    <option value="Biab met verlenging">Biab met verlenging</option>
+                </select>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Voer uw contactgegevens in</legend>
+
+                <label for="email">Voer uw e-mail in:</label> 
+                <input type="email" id="email" name="email">
+                    
+                <label for="telefoonnummer">Voer uw telefoonnummer in:</label>
+                <input type="tel" id="telefoonnummer" name="telefoonnummer">
+            </fieldset>
+         
+            <input type="submit" value="Afspraak maken">
+        </form>
     </main>
+    
+   
 
     <footer>
-        © 2023 Jouw JadeRoosNails. Alle rechten voorbehouden.
+        © 2023 Jouw Bedrijfsnaam. Alle rechten voorbehouden.
     </footer>
 </body>
 
